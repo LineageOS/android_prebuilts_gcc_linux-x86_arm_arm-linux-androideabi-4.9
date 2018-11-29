@@ -1,1 +1,14 @@
-../../bin/arm-linux-androideabi-as
+#! /usr/bin/python
+
+from sys import argv
+from subprocess import check_call
+
+if __name__ == '__main__':
+  for index, arg in enumerate(argv):
+    if arg == '-mcpu=cortex-a55':
+      argv[index] = '-mcpu=cortex-a53'
+    elif arg == '-mcpu=cortex-a75':
+      argv[index] = '-mcpu=cortex-a73'
+
+  argv[0] = argv[0] + '.real'
+  check_call(argv)
