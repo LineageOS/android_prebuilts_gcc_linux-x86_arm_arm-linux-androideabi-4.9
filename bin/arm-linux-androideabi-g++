@@ -26,7 +26,7 @@ class CompilerWrapper():
       compiler = os.path.basename(os.path.abspath(__file__))
     self.real_compiler = os.path.join(
         compiler_path,
-        "2cddb322-6232-11e9-93da-4755b1c03667")
+        "561b170a-a816-11e9-b283-6b5a5e00ead0")
     self.argv0 = self.real_compiler
 
   def process_gomacc_command(self):
@@ -65,7 +65,7 @@ class CompilerWrapper():
     self.process_gomacc_command()
     self.add_flags()
     self.execargs += [self.real_compiler] + self.args
-    time.sleep(1)
+    time.sleep(3)
     os.execv(self.argv0, self.execargs)
 
 
