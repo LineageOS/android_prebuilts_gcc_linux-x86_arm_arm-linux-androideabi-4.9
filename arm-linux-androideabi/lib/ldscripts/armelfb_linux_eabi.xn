@@ -7,7 +7,7 @@ OUTPUT_FORMAT("elf32-bigarm", "elf32-bigarm",
 	      "elf32-littlearm")
 OUTPUT_ARCH(arm)
 ENTRY(_start)
-SEARCH_DIR("=/tmp/a24f0ca873a2f394592d630467a62cae/arm-linux-androideabi/lib"); SEARCH_DIR("=/usr/local/lib"); SEARCH_DIR("=/lib"); SEARCH_DIR("=/usr/lib");
+SEARCH_DIR("=/tmp/3b2d6b4d0b0ef4b7e5a79b69d0b306b4/arm-linux-androideabi/lib"); SEARCH_DIR("=/usr/local/lib"); SEARCH_DIR("=/lib"); SEARCH_DIR("=/usr/lib");
 SECTIONS
 {
   /* Read-only sections, merged into text segment: */
